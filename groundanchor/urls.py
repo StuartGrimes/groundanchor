@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from contacts import views as contacts_views
 from accounts import views as accounts_views
+from contacts import views as contacts_views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', accounts_views.login, name='login'),
-    # url(r'^login/$', accounts_views.processlogin, name='login'),
+    url(r'^contacts$', contacts_views.contactList, name='contactList'),
+    url(r'^addContact$', contacts_views.saveNewContact, name='addContact'),
+    url(r'^updateContact/$', contacts_views.updateContact, name='updateContact')
 ]

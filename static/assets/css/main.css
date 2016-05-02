@@ -431,6 +431,13 @@ ul.chats > li.out .media:after {
   width: 100%;
 }
 
+#addContactForm{
+  position: fixed;
+  bottom: -20px;
+  width: 100%;
+
+}
+
 .search-filters > a {
   padding: 5px 15px;
   border: 1px solid #616f77;
@@ -17595,3 +17602,9 @@ hr.line-full {
     opacity: 1;
   }
 }
+
+*[id*='editrow'] td:last-child{
+
+
+}
+

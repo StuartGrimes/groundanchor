@@ -4,6 +4,7 @@ from django.db import models
 from django.utils import timezone
 
 
+
 # Create your models here.
 
 class AccountUserManager(UserManager):
@@ -24,3 +25,4 @@ class AccountUserManager(UserManager):
 
 class User(AbstractUser):
     objects = AccountUserManager()
+    starturl = models.CharField(default= '/contacts', max_length=200)
