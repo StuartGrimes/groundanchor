@@ -80,11 +80,9 @@ WSGI_APPLICATION = 'groundanchor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'groundanchor',
-        'USER': 'Stuart',
-        'PASSWORD': 'Ducati1099',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'OPTIONS':{
+            'read_default_file': './groundanchor/my.cnf',
+        },
     }
 }
 

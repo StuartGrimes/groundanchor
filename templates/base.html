@@ -1581,7 +1581,7 @@
 
         $('td{{ contact.id }}').on("click", function () {
             if ($(this).find('a').hasClass('fa fa-pencil')) {
-                $(this).find('a').removeClass('fa fa-pencil');
+                 $(this).find('a').removeClass('fa fa-pencil');
                 $(this).find('a').addClass('fa fa-check');
                 $(this).closest('tr').attr('contenteditable', 'true');
             }
